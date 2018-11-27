@@ -11,13 +11,13 @@ interfaces
 ThemePark
 MVP
 Classes and Abstract Classes
-Model a ThemePark (with various Attraction and Stalls) and its Visitors.
+Model a ThemePark (with various Attractions.Attraction and Stalls) and its Visitors.
 
 Remember to model class diagrams first, then write tests, then write code.
 
 Visitor has age, height, money
-Using an Attraction abstract class (which has a name), create some subclasses for Rollercoaster, Dodgems, Park, Playground
-Using a Stall abstract class (which has a name, ownerName and parkingSpot), create some classes for IceCreamStall, CandyFlossStall, TobaccoStall
+Using an Attractions.Attraction abstract class (which has a name), create some subclasses for Rollercoaster, Dodgems, Park, Playground
+Using a Stalls.Stall abstract class (which has a name, ownerName and parkingSpot), create some classes for Stalls.IceCreamStall, Stalls.CandyFlossStall, TobaccoStall
 Interfaces
 Introduce some Interfaces to enable charging, restricting and reviewing attractions and stalls:
 
@@ -42,9 +42,9 @@ ThemePark has a method getAllReviewed() which returns an ArrayList of IReviewed
 Extensions
 Classes and Abstract Classes
 ThemePark stores all Attractions and Stalls in it.
-ThemePark has a method visit(Visitor, Attraction)
+ThemePark has a method visit(Visitor, Attractions.Attraction)
 Interfaces
-Note: Starting prices are: £8.40 Rollercoaster, £4.50 Dodgems, £2.80 IceCreamStall, £4.20 CandyFlossStall, £6.60 TobaccoStall
+Note: Starting prices are: £8.40 Rollercoaster, £4.50 Dodgems, £2.80 Stalls.IceCreamStall, £4.20 Stalls.CandyFlossStall, £6.60 TobaccoStall
 
 Rollercoaster implements ITicketed and charges tall people over 200cm double fee
 Dodgems implements ITicketed and charge half price to children under 12 years old

@@ -1,3 +1,4 @@
+import Stalls.IceCreamStall;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -26,4 +27,6 @@ public class IceCreamStallTest {
     public void canGetParkingSpot() {
         assertEquals(12, iceCreamStall.getParkingSpot());
     }
+
+
 }
