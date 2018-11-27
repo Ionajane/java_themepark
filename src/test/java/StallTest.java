@@ -1,4 +1,5 @@
 import org.junit.Before;
+import org.junit.Test;
 
 public class StallTest {
 
@@ -7,5 +8,10 @@ public class StallTest {
     @Before
     public void before() {
         stall = new Stall("Rubber Duckies", "Joe", 12);
+    }
+
+    @Test
+    public void cangetName() {
+
     }
 }
